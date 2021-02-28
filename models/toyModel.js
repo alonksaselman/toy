@@ -20,7 +20,7 @@ exports.validTOY = (_bodyData) => {
     name:Joi.string().min(2).max(100).required(),
     info:Joi.string().min(2).max(50).required(),
     category:Joi.string().min(2).max(500).required(),
-    img_url:Joi.string().min(2).max(100),
+    img_url:Joi.string().min(2).max(1000),
     price:Joi.number().min(1).max(10000).required()
   });
 
